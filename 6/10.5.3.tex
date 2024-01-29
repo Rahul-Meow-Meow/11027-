@@ -56,60 +56,45 @@
 The first and the last terms of an AP are 17 and 350 respectively. If the common difference
 is 9, how many terms are there and what is their sum?
 \subsection{Solution}
-The expression to find the $n^{th}$ term of the Arithmetic Progression is given by
-\begin{table}[h]
+\begin{table}[ht]
 \input{tables/table_1-1}
 \end{table}
-\bigskip
-\begin{align}\label{eq:1}a_n = a_0 + nd\end{align}
-The question asked for the number of terms present in the AP, hence from \ref{eq:1}
-\begin{align}\label{eq:2} n=\frac{a_n-a_0}{d} \end{align}
-Thus, plugging the values into equation \ref{eq:2} 
+\begin{align}
+\begin{aligned}
+\label{eq:1}x(n) &= (x(0) + nd)u(n)\\
+&=(17+9n)u(n)
+\end{aligned}
+\end{align}
+Thus,
 $$\fbox{n = 37}$$
-Now, the expression for sum of numbers in an Arithmetic Progression is given by
-\begin{equation}\label{eq:3} S_n = (\frac{n+1}{2})(a_1+a_n)\end{equation}
-Where $S_n$ is the sum of n+1 terms of AP and the rest of the symbols carry the same meaning as mentioned above.\\
-Plugging the values into equation, we get
-$$S_n = 6973$$\\\\
-Thus, the number of terms present in the Arithmetic Progression is 38 and sum of terms of the Arithmetic Progression is 6973.
-\section{Question 2}
-\subsection{Question statement}
-Express nth term as x(n) in terms of u(n) and find it's Z transform. Additionally, plot the graph of x(n) using python and give the ROC of X(Z).\\
-\subsection{Solution}
-The formula for sum of numbers in an AP is 
-$$a_n = a_0 + nd$$
-\begin{table}[h]
-\input{tables/table_1-2}
-\end{table}
+If $|Z|>1$, then
+\begin{align}\label{8}X(z) = (17-8z^{-1})({(1-z^{-1})}^{-2}\end{align}
+\begin{align}y(n) = x(n) \star u(n)\end{align}
+\begin{align}\implies Y(z) = X(z)U(z)\end{align}
+\begin{align}Y(z) = \frac{(17-8z^{-1})}{(1-z^{-1})^{3}}\end{align}
 \bigskip
-Thus, plugging the values as given in the question
-\begin{equation}\label{eq:1st}a_n = 8+9n\end{equation}
-Now, the function x(n) is in terms of u(n) as well.\\ Thus from equation \ref{eq:1st},
-\begin{equation}\label{eq:2nd}x(n) = (8 + 9n)u(n)\end{equation}
-where u(n) is the unit step function\\
-Now, it's Z transform has to be computed.
-The Z transform for a general function f(n) is calculated by using the expression
-\begin{equation}\label{Z Transform}X(Z) = \mathcal{Z}(x|n|) = \sum^{\infty}_{n=-\infty}x[n]Z^{-n}\end{equation}
-Where
-\begin{itemize}
-    \item X(Z) is the function as asked in the question.
-    \item $\mathcal{Z}(x|n|)$ is the Z transform.
-    \item x[n] is the value of the function defined in equation \ref{eq:2nd} at a value n.
-\end{itemize}
-\newpage
-Now, plugging in the function defined in equation \ref{eq:2nd} into expression \ref{Z Transform}, we get
-\begin{equation}\label{7} X(Z) = \sum^{\infty}_{n=0}(8+9n)Z^{-n}\end{equation}
-Now, this expression can be evaluated only when $|Z|>1$(Thus, making $|Z|>1$ the region of convergence).\\
-If $|Z|>1$, then expression \ref{7} simplifies to
-\begin{equation}\label{8}X(Z) = (8-5Z)({(1-Z)}^{-2}\end{equation}
-\newpage
+Using contour integral to find Z transform, we get
+\begin{align}
+\begin{aligned}
+    y(37) &= \frac{1}{2\pi j} \oint _C Y(z)z^{36}dz\\
+    &= \frac{1}{2\pi j} \oint _C \frac{(17-8z^{-1})}{(1-z^{-1})^{3}}z^{36}dz
+\end{aligned}
+\end{align}
+Now, using Cauchy's residual theorem and observing the fact that 3 repeated poles exist at z = 1, 
+\begin{align}
+\begin{aligned}
+    R &= \frac{1}{(k-1)!}\lim_{x \to c}\frac{d^{k-1}}{dz^{k-1}}((z-c)^kf(z))\\
+    &= \frac{1}{2!}\lim_{x \to 1}\frac{d^{k-1}}{dz^{k-1}}((z-1)^3\frac{(17-8z^{-1})}{(1-z^{-1})^{3}}z^{36})\\
+    &=\frac{9}{2}\lim_{x \to 1}\frac{d^2}{dz^2}(17z^{39} - 8z^{38})\\
+    &= 6973
+\end{aligned}
+\end{align}
 \begin{flushleft}
 \begin{figure}[h]
 \renewcommand\thefigure{1}
-    \caption{Enter Caption}
-    \includegraphics[width=1.1\textwidth]{figs/x(n)_plot.png}
+    \caption{Stem Plot of $x(n)$ v/s n}
+    \includegraphics[width=0.5\textwidth]{figs/x(n)_plot.png}
     \label{fig:stem-plot}
 \end{figure}
 \end{flushleft}
-
 \end{document}
