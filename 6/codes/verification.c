@@ -4,8 +4,11 @@ int func(int n){
 }
 void main(){
 int sum = 0;
+FILE *ptr;
+ptr = fopen("series.txt","w");
 for (int i = 0; func(i)<=350; i++){
+	fprintf(ptr,"%d ",func(i));
 	sum += func(i);
 }
-printf("%d\n",sum);
+fprintf(ptr,"\n%d",sum);
 }
