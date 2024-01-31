@@ -14,7 +14,7 @@ plot.stem(x_range,y_range)
 
 plot.xlabel('n')
 plot.ylabel('x(n)')
-plot.title('Stem plot of x(n) v/s n')
+#plot.title('Stem plot of x(n) v/s n')
 plot.savefig("x(n)_plot.png")
 
 plot.show()

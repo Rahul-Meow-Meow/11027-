@@ -62,16 +62,16 @@ SOLUTION:
 \input{tables/table_1-1}
 \end{table}
 \begin{align}
-x(n) = (x(0) + nd)u(n)\\
-x(l)=(17+9l)u(l)
+x(n) &= (x(0) + nd)u(n)\\
+x(l)&=(17+9l)u(l)
 \end{align}
 
 Thus,
 \begin{align}{l = 37}\end{align}
-If $|Z|>1$, then
-\begin{align}\label{8}X(z) = (17-8z^{-1})({(1-z^{-1})}^{-2}\end{align}
-\begin{align}y(n) = x(n) * u(n)\end{align}
-\begin{align}\implies Y(z) &= X(z)U(z)\\
+If $|Z|>1$, using \eqref{eq:APSum},
+\begin{align}X(z) &= (17-8z^{-1})({(1-z^{-1})}^{-2}\\
+y(n) &= x(n) * u(n)\\
+\implies Y(z) &= X(z)U(z)\\
 &= \frac{(17-8z^{-1})}{(1-z^{-1})^{3}}\end{align}
 \bigskip
 Using contour integral to find Z transform, we get
