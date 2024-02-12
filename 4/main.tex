@@ -53,7 +53,7 @@
 \renewcommand{\thetable}{\theenumi}
 QUESTION:\\
 Find sum to n terms of the following series:\\
-$\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \ldots$
+$\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \ldots$ \hfill(NCERT discrete 11.9.9.4)
 \bigskip \bigskip
 
 
@@ -72,29 +72,9 @@ y(n) &= x(n) * u(n)\\
 \implies Y(z) &= X(z)U(z)\\
 &= z^2\ln{(1-z^{-1})} + \frac{z^2}{z-1}\end{align}
 \bigskip
-Using contour integral to find Z transform, we get
+Using \eqref{11027_eq1} and \eqref{11027_eq2}, we get,
 \begin{align}
-    y(n) &= \frac{1}{2\pi j} \oint _C Y(z)z^{n-1}dz\\
-    &= \frac{1}{2\pi j} \oint _C z^{n+1}\ln{(1-z^{-1})} + \frac{z^{n+1}}{z-1} dz
-\end{align}
-Now, using Cauchy's residual theorem for the second term of the integral(=R,say), and observing the fact that one pole exists at z = 1, 
-\begin{align}
-    R &= \lim_{z \to c}(z-c)f(z)\\
-    &=\lim_{z \to 1}z^{n+1}\\
-    &=1
-\end{align}
-Thus,
-The first term of the integral(=d(n),say) can be calculated directly.
-\begin{align}
-    d(n)&=\frac{1}{2\pi j} \oint _C z^{n+1}\ln{(1-z^{-1})}dz\\
-    &=\frac{-1}{2\pi j} \oint _C z^{n+1}(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+.. + \frac{z^{-(n+1)}}{n+1}+ \frac{z^{-(n+2}}{n+2}+.. dz\\
-    &z=e^{jt}\\
-    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{(n+2)jt}(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3}+.. +\frac{z^{-(n+2}jt}{n+2}+.. dz\\
-    &=\frac{-1}{n+2}
-\end{align}
-Thus, 
-\begin{align}
-    y(n) = 1 - \frac{1}{n+2}
+y(n) = 1- \frac{1}{n+2} 
 \end{align}
 \begin{figure}[h]
     %\caption{Stem Plot of $x(n)$ v/s n}
@@ -102,3 +82,4 @@ Thus,
     \caption{Stem Plot of $x(n)$ v/s n}
 \end{figure}
 \end{document}
+
