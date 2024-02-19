@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  19 FEB 2024 09:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  19 FEB 2024 09:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**11027_app.tex
+(./11027_app.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -1092,13 +1092,13 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux)
-\openout1 = `main.aux'.
+)
+No file 11027_app.aux.
+\openout1 = `11027_app.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 43.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1225,10 +1225,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
-
-(./main.out) (./main.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `11027_app.out'.
 
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 50.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
@@ -1261,62 +1259,51 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-(./tables/table_1.1.tex)
-
-LaTeX Warning: Reference `11027_eq1' on page 1 undefined on input line 68.
-
-
-LaTeX Warning: Reference `11027_eq2' on page 1 undefined on input line 74.
-
-
-LaTeX Warning: Reference `11027_eq3' on page 1 undefined on input line 74.
-
-<figs/x(n)_plot.png, id=7, 462.528pt x 346.896pt>
-File: figs/x(n)_plot.png Graphic file (type png)
-<use figs/x(n)_plot.png>
-Package pdftex.def Info: figs/x(n)_plot.png  used on input line 80.
-(pdftex.def)             Requested size: 258.0pt x 193.50879pt.
-
-Overfull \hbox (6.0pt too wide) in paragraph at lines 80--81
-[][][] 
+Overfull \hbox (15.67659pt too wide) detected at line 61
+[]
  []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Overfull \hbox (50.21388pt too wide) detected at line 68
+[]
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/x(n)_plot.png>]
-(./main.aux)
 
-LaTeX Warning: There were undefined references.
-
+] (./11027_app.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+Package rerunfilecheck Warning: File `11027_app.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `11027_app.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29573 strings out of 478287
- 582671 string characters out of 5849289
- 841715 words of memory out of 5000000
- 47114 multiletter control sequences out of 15000+600000
- 546114 words of font info for 198 fonts, out of 8000000 for 9000
+ 29519 strings out of 478287
+ 582059 string characters out of 5849289
+ 845498 words of memory out of 5000000
+ 47082 multiletter control sequences out of 15000+600000
+ 534914 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,13n,96p,408b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,10n,96p,413b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/rtxsc.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tx
-fonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb>
-</usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 55359 bytes).
+1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
+onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on 11027_app.pdf (1 page, 37941 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
+ 68 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 15 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
