@@ -51,45 +51,13 @@
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-QUESTION:\\
-The continuous time signal $x(t)$ is described by:
-\begin{align}
-x(t)=
-    \begin{cases}
-        1, & \text{if } 0\: {\displaystyle \leq }\:t\:{\displaystyle \leq }\:1\\
-        0, & \text{elsewhere}
-    \end{cases} 
+\begin{align}\label{11027_lp_1}
+u(t) \system{\mathcal{L}} \frac{1}{s}\\
+tu(t) \system{\mathcal{L}} \frac{1}{s^2}
 \end{align}
-If $y(t)$ represents $x(t)$ convolved with itself, which of the following options is/are TRUE?
-\begin{enumerate}[label = \Alph*]
-    \item $y(t)$ = 0 for all $t<0$\\
-    \item $y(t)$ = 0 for all $t>1$\\
-    \item $y(t)$ = 0 for all $t>3$\\
-    \item $\int_{0.1}^{0.75} \frac{dy(t)}{dt}\: \text{dt} \neq 0$
-\end{enumerate}
-SOLUTION:
-\begin{align}
-    y(t) &= x(t) * x(t)\\
-    Y(s) &= X(s)X(s)\\
-    &=(\frac{1-e^{-s}}{s})^2\\
-    &=\frac{1+e^{-2s}-2e^{-s}}{s^2}
+\begin{align}\label{11027_lp_2}
+    f(t) \system{\mathcal{L}} F(s)  \implies f(t+a)u(t-a) \system{\mathcal{L}} e^{as}F(s)
 \end{align}
-Using \eqref{11027_lp_1} and \eqref{11027_lp_2}, 
-\begin{align}
-    y(t) = tu(t) + (t-2)u(t-2) -2(t-1)u(t-1)
-\end{align}
-For $t<0$, $u(t), u(t-1), u(t-2)$ all are zero, hence $y(t) = 0$. Thus, option A is right.\\
-
-If $1<t<2$, $u(t)$ and $u(t-1)$ are equal to unity while $u(t-2)$ is equal to 0. Thus, $y(t) = 2-t$. Thus, option B is wrong.\\
-
-If $t>3$, $u(t), u(t-1), u(t-2)$ are all equal to unity. Thus, $y(t) = 0$. Thus, option C is right.\\
-
-\begin{align}
-    \int_{0.1} ^ {0.75} dy(t) &= y(0.75) - y(0.1) \\
-    &= 0.75 - 0.1\\
-    &= -0.25
-\end{align}
-Thus, option D is right.\\
 \end{document}
 
 

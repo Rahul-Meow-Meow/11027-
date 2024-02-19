@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  19 FEB 2024 17:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  19 FEB 2024 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**main.tex
-(./main.tex
+**appendix_lp.tex
+(./appendix_lp.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/ieeetran/IEEEtran.cls
@@ -1092,13 +1092,12 @@ LaTeX Font Info:    Trying to load font information for OT1+txr on input line 4
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
-) (./main.aux)
-\openout1 = `main.aux'.
+) (./appendix_lp.aux)
+\openout1 = `appendix_lp.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 43.
 LaTeX Font Info:    Trying to load font information for OML+txmi on input line 
 43.
-
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
@@ -1226,9 +1225,9 @@ LaTeX Info: Redefining \ref on input line 43.
 LaTeX Info: Redefining \pageref on input line 43.
 LaTeX Info: Redefining \nameref on input line 43.
 
-(./main.out) (./main.out)
+(./appendix_lp.out) (./appendix_lp.out)
 \@outlinefile=\write5
-\openout5 = `main.out'.
+\openout5 = `appendix_lp.out'.
 
 LaTeX Font Info:    Calculating math sizes for size <14> on input line 50.
 LaTeX Font Info:    Trying to load font information for U+txsya on input line 5
@@ -1261,77 +1260,82 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--67
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
- []
-
-
-LaTeX Warning: Reference `11027_lp_1' on page 1 undefined on input line 77.
-
-
-LaTeX Warning: Reference `11027_lp_2' on page 1 undefined on input line 77.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 83--84
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 85--86
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 91--93
-
- []
-
+! Undefined control sequence.
+<argument> \label {11027_lp_1} u(t) \system 
+                                            {\mathcal {L}} \frac {1}{s}\\ tu...
+l.57 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> ...l {L}} \frac {1}{s}\\ tu(t) \system 
+                                                  {\mathcal {L}} \frac {1}{s...
+l.57 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> \label {11027_lp_1} u(t) \system 
+                                            {\mathcal {L}} \frac {1}{s}\\ tu...
+l.57 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> ...l {L}} \frac {1}{s}\\ tu(t) \system 
+                                                  {\mathcal {L}} \frac {1}{s...
+l.57 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> \label {11027_lp_2} f(t) \system 
+                                            {\mathcal {L}} F(s) \implies f(t...
+l.60 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> ... F(s) \implies f(t+a)u(t-a) \system 
+                                                  {\mathcal {L}} e^{as}F(s) 
+l.60 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> \label {11027_lp_2} f(t) \system 
+                                            {\mathcal {L}} F(s) \implies f(t...
+l.60 \end{align}
+                
+? 
+! Undefined control sequence.
+<argument> ... F(s) \implies f(t+a)u(t-a) \system 
+                                                  {\mathcal {L}} e^{as}F(s) 
+l.60 \end{align}
+                
+? 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
-] (./main.aux)
+] (./appendix_lp.aux)
 
-LaTeX Warning: There were undefined references.
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `main.out' has not changed.
+Package rerunfilecheck Info: File `appendix_lp.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29529 strings out of 478287
- 582106 string characters out of 5849289
- 842690 words of memory out of 5000000
- 47084 multiletter control sequences out of 15000+600000
- 536264 words of font info for 172 fonts, out of 8000000 for 9000
+ 29514 strings out of 478287
+ 582044 string characters out of 5849289
+ 827572 words of memory out of 5000000
+ 47081 multiletter control sequences out of 15000+600000
+ 534914 words of font info for 170 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 101i,16n,96p,408b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,9n,96p,415b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/txfonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txf
-onts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyc.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 47741 bytes).
+e/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/txfonts/txsy.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr
+i8a.pfb>
+Output written on appendix_lp.pdf (1 page, 24731 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
+ 40 PDF objects out of 1000 (max. 8388607)
+ 28 compressed objects within 1 object stream
+ 5 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
