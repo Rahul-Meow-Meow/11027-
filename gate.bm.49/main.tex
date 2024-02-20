@@ -43,7 +43,7 @@
 \begin{document}
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
-\title{11.9.4.4}
+\title{GATE BM Q49}
 \author{EE23BTECH11027 - K RAHUL$^{*}$% <-this % stops a space
 }
 \maketitle
@@ -51,6 +51,17 @@
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
+DERIVATIONS AND RESULTS: \\
+\begin{align}
+u(t) \system{L} \frac{1}{s}\\
+tu(t) \system{L} \frac{1}{s^2} \label{lap_1}
+\end{align}
+	
+\begin{align}
+    f(t) \system{L} F(s)  \implies f(t+a)u(t-a) \system{L} e^{as}F(s) \label{lap_2}
+\end{align}\\
+\bigskip
+
 QUESTION:\\
 The continuous time signal $x(t)$ is described by:
 \begin{align}
@@ -66,15 +77,21 @@ If $y(t)$ represents $x(t)$ convolved with itself, which of the following option
     \item $y(t)$ = 0 for all $t>1$\\
     \item $y(t)$ = 0 for all $t>3$\\
     \item $\int_{0.1}^{0.75} \frac{dy(t)}{dt}\: \text{dt} \neq 0$
-\end{enumerate}
+\end{enumerate} \hfill{GATE 2023 BM- Q 49}\\
+\bigskip 
+\bigskip
 SOLUTION:
+\begin{table}[ht]
+\input{tables/table1}
+\end{table}
+\bigskip
 \begin{align}
     y(t) &= x(t) * x(t)\\
     Y(s) &= X(s)X(s)\\
     &=(\frac{1-e^{-s}}{s})^2\\
     &=\frac{1+e^{-2s}-2e^{-s}}{s^2}
 \end{align}
-Using \eqref{11027_lp_1} and \eqref{11027_lp_2}, 
+Using \eqref{lap_1} and \eqref{lap_2}, 
 \begin{align}
     y(t) = tu(t) + (t-2)u(t-2) -2(t-1)u(t-1)
 \end{align}
@@ -90,6 +107,11 @@ If $t>3$, $u(t), u(t-1), u(t-2)$ are all equal to unity. Thus, $y(t) = 0$. Thus,
     &= -0.25
 \end{align}
 Thus, option D is right.\\
+\begin{figure}[h]
+    %\caption{Stem Plot of $x(n)$ v/s n}
+    \includegraphics[width=0.3\textwidth]{figs/y(t)_vs_t.png}\label{fig:y(t)_vs_t}
+    \caption{Stem Plot of $y(t)$ v/s t}
+\end{figure}
 \end{document}
 
 
