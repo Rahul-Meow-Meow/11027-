@@ -43,7 +43,7 @@
 \begin{document}
 \bibliographystyle{IEEEtran}
 \vspace{3cm}
-\title{11.9.4.4}
+\title{Appendix 11.9.4.4}
 \author{EE23BTECH11027 - K RAHUL$^{*}$% <-this % stops a space
 }
 \maketitle
@@ -52,24 +52,25 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 %Derivation for the Z transform of a function $x(n) = \frac{1}{n+c}u(n)$, where $c \in \mathbb{R}$
-\begin{align}\label{11027_eq1}
-    x(n) &= \frac{1}{n+c} u(n),\text{where} \: c \in \mathbb{R}\\
-    X(z) &= \sum_{n= -\infty}^{n= +\infty} x(n)z^{-n}\\
+\begin{align}
+    x\brak{n} &= \frac{1}{n+c} u\brak{n},\text{where} \: c \in \mathbb{R}\\
+    X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
-    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-(n+c)}\\
-    &= z^c(-log(1-Z^{-1}) - z^{-1}-\frac{z^{-2}}{2}-\frac{z^{-3}}{3} \ldots -\frac{z^{-(c-1)}}{c-1}))
-\end{align}
-\begin{align}\label{11027_eq2}
-    d(n)&=\frac{1}{2\pi j} \oint _C z^{n+1}\ln{(1-z^{-1})}dz\\
-    &=\frac{-1}{2\pi j} \oint _C z^{n+1}(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+.. + \frac{z^{-(n+1)}}{n+1}+ \frac{z^{-(n+2}}{n+2}+.. dz\\
+    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}\\
+    &= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}-\frac{z^{-2}}{2}\notag \\& \;\;\;\;-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\label{11027_eq1}
+\end{align} 
+\begin{align}
+    d\brak{z} &= z^{2}log\brak{1-z^{-1}}\\
+    d\brak{n}&=\frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
+    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz\\
     &z=e^{jt}\\
-    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{(n+2)jt}(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3}+.. +\frac{z^{-(n+2}jt}{n+2}+.. dz\\
-    &=\frac{-1}{n+2}
+    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3} \notag \\&+.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dz\\
+    &=\frac{-1}{n+2}\label{11027_eq2}
 \end{align}
 
-\begin{align}\label{11027_eq3}
-    d(n)&= \frac{z^n}{1-z^{-1}}\\
-    &= \lim_{x \to 1}z^{n+1} \text{(Residue Theorem)}\\
-    &= 1
+\begin{align}
+    d\brak{z}&= \frac{z^k}{1-z^{-1}},\text{where} \: k \in \mathbb{R}\\
+    d\brak{n}&= \lim_{x \to 1}z^{n+k-1} \text{(Residue Theorem)}\\
+    &= 1\label{11027_eq3}
 \end{align}
 \end{document}

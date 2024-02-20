@@ -57,18 +57,19 @@ DERIVATIONS AND RESULTS: \\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
     &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}\\
     &= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}-\frac{z^{-2}}{2}\notag \\& \;\;\;\;-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\label{11027_eq1}
-\end{align}
+\end{align} 
 \begin{align}
-    d(n)&=\frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
-    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-(n+2}}{n+2}+ \ldots \biggr) dz\\
+    d\brak{z} &= z^{2}log\brak{1-z^{-1}}\\
+    d\brak{n}&=\frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
+    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz\\
     &z=e^{jt}\\
-    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3} \notag \\&+.. +\frac{z^{-(n+2}jt}{n+2}+..\biggr) dz\\
+    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3} \notag \\&+.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dz\\
     &=\frac{-1}{n+2}\label{11027_eq2}
 \end{align}
 
 \begin{align}
-    d\brak{n}&= \frac{z^n}{1-z^{-1}}\\
-    &= \lim_{x \to 1}z^{n+1} \text{(Residue Theorem)}\\
+    d\brak{z}&= \frac{z^k}{1-z^{-1}},\text{where} \: k \in \mathbb{R}\\
+    d\brak{n}&= \lim_{x \to 1}z^{n+k-1} \text{(Residue Theorem)}\\
     &= 1\label{11027_eq3}
 \end{align}
 \bigskip
@@ -94,7 +95,7 @@ Using \eqref{11027_eq1}we get,
 \end{align}
 \text{Using \eqref{11027_eq2} and \eqref{11027_eq3},}
 \begin{align}
-    y\brak{n} &= 1 - \frac{1}{n+1}\\
+    y\brak{n} &= 1 - \frac{1}{n+2}\\
 \end{align}
 \begin{figure}[h]
     %\caption{Stem Plot of $x\brak{n}$ v/s n}
