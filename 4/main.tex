@@ -27,7 +27,6 @@
 \usepackage{hhline}                                           
 \usepackage{ifthen}                                           
 \usepackage{lscape}
-
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{problem}{Problem}
 \newtheorem{proposition}{Proposition}[section]
@@ -51,6 +50,28 @@
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
+DERIVATIONS AND RESULTS: \\
+\begin{align}
+    x\brak{n} &= \frac{1}{n+c} u\brak{n},\text{where} \: c \in \mathbb{R}\\
+    X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
+    &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
+    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}\\
+    &= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}-\frac{z^{-2}}{2}\notag \\& \;\;\;\;-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\label{11027_eq1}
+\end{align}
+\begin{align}
+    d(n)&=\frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
+    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-(n+2}}{n+2}+ \ldots \biggr) dz\\
+    &z=e^{jt}\\
+    &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3} \notag \\&+.. +\frac{z^{-(n+2}jt}{n+2}+..\biggr) dz\\
+    &=\frac{-1}{n+2}\label{11027_eq2}
+\end{align}
+
+\begin{align}
+    d\brak{n}&= \frac{z^n}{1-z^{-1}}\\
+    &= \lim_{x \to 1}z^{n+1} \text{(Residue Theorem)}\\
+    &= 1\label{11027_eq3}
+\end{align}
+\bigskip
 QUESTION:\\
 Find sum to n terms of the following series:\\
 $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \ldots$
@@ -62,23 +83,24 @@ SOLUTION:
 \input{tables/table_1.1}
 \end{table}
 \begin{align}
-x(n) &= \frac{1}{(n+1)(n+2)}u(n)\\
-& = (\frac{1}{n+1} - \frac{1}{n+2})u(n)\\
+x\brak{n} &= \frac{1}{\brak{n+1}\brak{n+2}}u\brak{n}\\
+& = \brak{\frac{1}{n+1} - \frac{1}{n+2}}u\brak{n}\\
 \end{align}
 Using \eqref{11027_eq1}we get,
-\begin{align}X(z) &= -z log(1-z^{-1}) + z^2 log(1-z^{-1}) + z\\
-&= z(z-1)log(1-z^{-1}) + z\\
-    Y(z) &= X(z)U(z)\\
-     &=z^2log(1-z^{-1}) + \frac{z}{1-z^{-1}} \\
+\begin{align}X\brak{z} &= -z log\brak{1-z^{-1}} + z^2 log\brak{1-z^{-1}} + z\\
+&= z\brak{z-1}log\brak{1-z^{-1}} + z\\
+    Y\brak{z} &= X\brak{z}U\brak{z}\\
+     &=z^2log\brak{1-z^{-1}} + \frac{z}{1-z^{-1}} \\
 \end{align}
 \text{Using \eqref{11027_eq2} and \eqref{11027_eq3},}
 \begin{align}
-    y(n) &= 1 - \frac{1}{n+1}\\
+    y\brak{n} &= 1 - \frac{1}{n+1}\\
 \end{align}
 \begin{figure}[h]
-    %\caption{Stem Plot of $x(n)$ v/s n}
-    \includegraphics[width=0.5\textwidth]{figs/x(n)_plot.png}\label{fig:stem-plot}
-    \caption{Stem Plot of $x(n)$ v/s n}
+    %\caption{Stem Plot of $x\brak{n}$ v/s n}
+    \includegraphics[width=0.3\textwidth]{figs/x(n)_plot.png}\label{fig:stem-plot}
+    \caption{Stem Plot of $x\brak{n}$ v/s n}
 \end{figure}
 \end{document}
+
 
