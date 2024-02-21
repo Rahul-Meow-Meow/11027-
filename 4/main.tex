@@ -50,36 +50,51 @@
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-DERIVATIONS AND RESULTS: \\
+\textbf{Derivations and results:} \\
 \begin{align}
-    x\brak{n} &= \frac{1}{n+c} u\brak{n},\text{where} \: c \in \mathbb{R}\\
+        log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
+\end{align}
+Let $x\brak{n}$ be some expression in discrete time domain, whose $Z$ transform, $X(z)$ shall be obtained for future reference.\\
+\begin{align}
+	\notag\text{For } x\brak{n} &= \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}\\
     X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
-    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}\\
-    &= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}-\frac{z^{-2}}{2}\notag \\& \;\;\;\;-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\label{11027_eq1}
+    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}} \\
+    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}-\frac{z^{-2}}{2}\notag \\& \;\;\;\;-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr) \brak{\text{Using} \eqref{log_expansion}} \label{11027_eq1}
 \end{align} 
+
 \begin{align}
-    d\brak{z} &= z^{2}log\brak{1-z^{-1}}\\
+	\notag \text{For } x\brak{n} &= \frac{1}{n+1}u\brak{n},\\
+	X\brak{z} &=\sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
+	&= \sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-n}\\
+	&= z\sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-\brak{n+1}} \\
+	&= -zlog\brak{1-z^{-1}} \brak{\text{Using} \eqref{log_expansion}} \label{When_c_equals_1}	
+\end{align}
+\newpage
+Let $D\brak{z}$ be some expression in $Z$ domain, whose inverse $Z$ transform, $d(n)$ shall be obtained for future reference.\\
+\begin{align}
+    \notag\text{For }D\brak{z} &= z^{2}log\brak{1-z^{-1}}\\
     d\brak{n}&=\frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
-    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz\\
-    &z=e^{jt}\\
+    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots + \frac{z^{-(n+1)}}{n+1} \notag\\ \;\: &+  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz\\ 
+\notag \\   
+\notag\text{Making}&\text{ the substitution }z=e^{jt} \implies dz = je^{jt}\\
     &=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} + \frac{e^{-3jt}}{3} \notag \\&+.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dz\\
     &=\frac{-1}{n+2}\label{11027_eq2}
 \end{align}
-
+\\
 \begin{align}
-    d\brak{z}&= \frac{z^k}{1-z^{-1}},\text{where} \: k \in \mathbb{R}\\
+    \notag \text{For }D\brak{z}&= \frac{z^k}{1-z^{-1}},\text{where} \: k \in \mathbb{R}\\
     d\brak{n}&= \lim_{x \to 1}z^{n+k-1} \text{(Residue Theorem)}\\
     &= 1\label{11027_eq3}
 \end{align}
-\bigskip
-QUESTION:\\
+\newpage
+\textbf{Question:} \\
 Find sum to n terms of the following series:\\
 $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \ldots$
 \bigskip \bigskip
 
 
-SOLUTION:
+\solution
 \begin{table}[ht]
 \input{tables/table_1.1}
 \end{table}
@@ -87,7 +102,7 @@ SOLUTION:
 x\brak{n} &= \frac{1}{\brak{n+1}\brak{n+2}}u\brak{n}\\
 & = \brak{\frac{1}{n+1} - \frac{1}{n+2}}u\brak{n}\\
 \end{align}
-Using \eqref{11027_eq1}we get,
+Using \eqref{11027_eq1} and \eqref{When_c_equals_1}, we get,
 \begin{align}X\brak{z} &= -z log\brak{1-z^{-1}} + z^2 log\brak{1-z^{-1}} + z\\
 &= z\brak{z-1}log\brak{1-z^{-1}} + z\\
     Y\brak{z} &= X\brak{z}U\brak{z}\\
@@ -97,6 +112,7 @@ Using \eqref{11027_eq1}we get,
 \begin{align}
     y\brak{n} &= 1 - \frac{1}{n+2}
 \end{align}
+\newpage
 \begin{figure}[h]
     %\caption{Stem Plot of $x\brak{n}$ v/s n}
     \includegraphics[width=0.3\textwidth]{figs/y(n)_vs_n.png}\label{fig:stem-plot}
