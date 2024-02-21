@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  21 FEB 2024 21:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  21 FEB 2024 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,7 +1288,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 90--92
 
 
 ] (./tables/table_1.1.tex)
-<figs/y(n)_vs_n.png, id=45, 462.528pt x 346.896pt>
+<figs/y(n)_vs_n.png, id=44, 462.528pt x 346.896pt>
 File: figs/y(n)_vs_n.png Graphic file (type png)
 <use figs/y(n)_vs_n.png>
 Package pdftex.def Info: figs/y(n)_vs_n.png  used on input line 129.
@@ -1298,9 +1298,9 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 29653 strings out of 478287
- 584476 string characters out of 5849289
- 865164 words of memory out of 5000000
+ 29652 strings out of 478287
+ 584463 string characters out of 5849289
+ 864164 words of memory out of 5000000
  47169 multiletter control sequences out of 15000+600000
  547490 words of font info for 200 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1314,10 +1314,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (2 pages, 70080 bytes).
+Output written on main.pdf (2 pages, 70052 bytes).
 PDF statistics:
- 111 PDF objects out of 1000 (max. 8388607)
- 86 compressed objects within 1 object stream
- 33 named destinations out of 1000 (max. 500000)
+ 110 PDF objects out of 1000 (max. 8388607)
+ 85 compressed objects within 1 object stream
+ 32 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
