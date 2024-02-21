@@ -51,13 +51,16 @@
 \bigskip
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
-\begin{align}\label{11027_lp_1}
-u(t) \system{\mathcal{L}} \frac{1}{s}\\
-tu(t) \system{\mathcal{L}} \frac{1}{s^2}
+\begin{align}
+\begin{align}
+u\brak{t} \system{L} \frac{1}{s}\\
+tu\brak{t} \system{L} \frac{1}{s^2} \label{lap_1}
 \end{align}
-\begin{align}\label{11027_lp_2}
-    f(t) \system{\mathcal{L}} F(s)  \implies f(t+a)u(t-a) \system{\mathcal{L}} e^{as}F(s)
-\end{align}
+	
+\begin{align}
+    f\brak{t} \system{L} F\brak{s}  \implies f\brak{t+a}u\brak{t-a} \system{L} e^{as}F\brak{s} \label{lap_2}
+\end{align}\\
+\bigskip
 \end{document}
 
 
