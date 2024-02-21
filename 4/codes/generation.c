@@ -1,26 +1,25 @@
 #include<stdio.h>
 #include<stdlib.h>
-int u(float t,int t_0){
-	if(t>=t_0){
-		return 1;
+float y(int n){
+	float sum = 0;
+	for(int i=0; i<=n; i++){
+		sum += 1.0/((i+1)*(i+2));
 	}
-	else{
-		return 0;
-	}
+	return sum;
 }
 /*void append(*ptr, len, add){
 	ptr = (int *)realloc(ptr, sizeof(int)*(len+1));
 	*(ptr+len) = add;*/
 
+float y_calcu(int n){
+	return 1-(1.0/(n+2));
+}
 void main(){
 	FILE *fptr;
 	fptr = fopen("Values.txt","w");
 	//int *ptr = (int*)malloc(int(s))
-	float t = -3;
-	for(int i = 0; i <=1000 ; i++){
-		t = t+ (1/100.0);
+	for(int i = 0; i<=10 ; i++){
 		//printf("%f ,", t);
-		float value = t*u(t,0) + (t-2)*u(t,2) -2*(t-1)*u(t,1);
-		fprintf(fptr, "%.3f %.3f\n", t, value);
+		fprintf(fptr, "%d %.3f %.3f\n", i, y(i), y_calcu(i));
 	}
 }
