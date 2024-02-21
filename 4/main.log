@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  20 FEB 2024 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.16)  21 FEB 2024 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1260,18 +1260,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  []
 
 (./tables/table_1.1.tex)
-<figs/y(t)_vs_t.png, id=10, 462.528pt x 346.896pt>
-File: figs/y(t)_vs_t.png Graphic file (type png)
-<use figs/y(t)_vs_t.png>
-Package pdftex.def Info: figs/y(t)_vs_t.png  used on input line 102.
+<figs/y(n)_vs_n.png, id=10, 462.528pt x 346.896pt>
+File: figs/y(n)_vs_n.png Graphic file (type png)
+<use figs/y(n)_vs_n.png>
+Package pdftex.def Info: figs/y(n)_vs_n.png  used on input line 102.
 (pdftex.def)             Requested size: 154.80157pt x 116.10104pt.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./figs/y(t)_vs_t.png>] (./main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+ <./figs/y(n)_vs_n.png>] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -1291,7 +1288,7 @@ fonts/txex.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 59756 bytes).
+Output written on main.pdf (1 page, 58564 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
