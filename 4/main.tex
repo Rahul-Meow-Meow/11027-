@@ -58,7 +58,7 @@
         log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
 \end{align}
 Let $x\brak{n}$ and $w\brak{n}$ be some expression as described in the table in discrete time domain, whose $Z$ transform, $X\brak{z}$ and $W\brak{z}$ respectively, shall be obtained for future reference.\\
-For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}$
+For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\forall c \geq 2,c \in \mathbb{N}$
 \begin{align}
     X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
@@ -66,7 +66,7 @@ For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mat
 \end{align}
 Using, \eqref{log_expansion}
 \begin{align}
-    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\text{ for $c \geq 2$, $c \in \mathbb{N}$} \label{11027_eq1}
+    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\ \forall c \geq 2, c \in \mathbb{N} \label{11027_eq1}
 \end{align} 
 For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \begin{align}
@@ -91,6 +91,10 @@ Making the substitution $z=e^{jt} \implies dz = je^{jt}dt$
     &=\frac{-1}{n+2} u\brak{n}\label{11027_eq2}
 \end{align}
 \\
+\begin{align}
+	u\brak{n} &\system{L} \frac{1}{1-z^{-1}} , \quad \abs{z} > 1\\
+	u\brak{n+1} &\system{L} \frac{z}{1-z^{-1}} \quad \abs{z} > 1 \label{Z_trans_pair}
+\end{align}
 \newpage
 \textbf{Question:} \\
 Find sum to n terms of the following series:\\
@@ -112,7 +116,7 @@ Using \eqref{11027_eq1} and \eqref{When_c_equals_1}, we get,
     Y\brak{z} &= X\brak{z}U\brak{z}\\
      &=z^2log\brak{1-z^{-1}} + \frac{z}{1-z^{-1}}
 \end{align}
-Using \eqref{11027_eq2} and applying time-shifting property to \eqref{app/mgf.tex/eq:uz},
+Using \eqref{11027_eq2} and \eqref{Z_trans_pair},
 \begin{align}
     y\brak{n} &= u\brak{n+1} - \frac{1}{n+2}u\brak{n} , \; n \geq 0
 \end{align}
