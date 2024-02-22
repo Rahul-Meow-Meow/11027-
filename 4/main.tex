@@ -51,53 +51,46 @@
 \renewcommand{\thefigure}{\theenumi}
 \renewcommand{\thetable}{\theenumi}
 \textbf{Derivations and results:} \\
+\begin{table}[ht]
+\input{tables/table_1.2}
+\end{table}
 \begin{align}
         log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
 \end{align}
-Let $x\brak{n}$ be some expression in discrete time domain, whose $Z$ transform, $X(z)$ shall be obtained for future reference.\\
-For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}$\\
+Let $x\brak{n}$ and $w\brak{n}$ be some expression as described in the table in discrete time domain, whose $Z$ transform, $X\brak{z}$ and $W\brak{z}$ respectively, shall be obtained for future reference.\\
+For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}$
 \begin{align}
     X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
     &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}
 \end{align}
-Using, \eqref{log_expansion}\\
+Using, \eqref{log_expansion}
 \begin{align}
-    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& \;\;\;\;-\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\label{11027_eq1}
+    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\text{ for $c \geq 2$, $c \in \mathbb{N}$} \label{11027_eq1}
 \end{align} 
-For $x\brak{n} = \frac{1}{n+1}u\brak{n},$\\
+For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \begin{align}
-	X\brak{z} &=\sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
+	W\brak{z} &=\sum_{n= -\infty}^{n= +\infty} w\brak{n}z^{-n}\\
 	&= \sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-n}\\
 	&= z\sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-\brak{n+1}} 
 \end{align}
-Using \eqref{log_expansion},\\
+Using \eqref{log_expansion},
 \begin{align}
-	X\brak{z}&= -zlog\brak{1-z^{-1}} \label{When_c_equals_1}	
+	W\brak{z}&= -zlog\brak{1-z^{-1}} \label{When_c_equals_1}	
 \end{align}
-\newpage
-
-Let $D\brak{z}$ be some expression in $Z$ domain, whose inverse $Z$ transform, $d(n)$ shall be obtained for future reference.\\
+\\
+Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whose inverse $Z$ transform, $d\brak{n}$ shall be obtained for future reference.\\
 For $D\brak{z}= z^{2}log\brak{1-z^{-1}}$
 \begin{align}
     d\brak{n}&= \frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
     &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots \notag\\ \;\: &+ \frac{z^{-(n+1)}}{n+1} +  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz
 \end{align}
-Making the substitution $z=e^{jt} \implies dz = je^{jt}$
+Making the substitution $z=e^{jt} \implies dz = je^{jt}dt$
 \begin{align}  
-    d\brak{n}&=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} \notag \\&+ \frac{e^{-3jt}}{3} +.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dz\\
-    &=\frac{-1}{n+2}\label{11027_eq2}
+    d\brak{n}&=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} \notag \\&+ \frac{e^{-3jt}}{3} +.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dt\\
+    &=\frac{-1}{n+2} u\brak{n}\label{11027_eq2}
 \end{align}
 \\
-\begin{align}
-    \notag \text{For }D\brak{z}&= \frac{z^k}{1-z^{-1}},\text{where} \: k \in \mathbb{R}\\
-    d\brak{n}&=\frac{1}{2\pi j} \oint _C \frac{z^{n+k-1}}{1-z^{-1}}dz
-\end{align}
-Using Residue Theorem,
-\begin{align}
-    d\brak{n}&= \lim_{z \to 1}\brak{\frac{z^{n+k-1}}{1-z^{-1}}}\brak{{1-z^{-1}}} \\
-    &= 1\label{11027_eq3}
-\end{align}
 \newpage
 \textbf{Question:} \\
 Find sum to n terms of the following series:\\
@@ -119,9 +112,13 @@ Using \eqref{11027_eq1} and \eqref{When_c_equals_1}, we get,
     Y\brak{z} &= X\brak{z}U\brak{z}\\
      &=z^2log\brak{1-z^{-1}} + \frac{z}{1-z^{-1}}
 \end{align}
-\text{Using \eqref{11027_eq2} and \eqref{11027_eq3},}
+Using \eqref{11027_eq2} and applying time-shifting property to \eqref{app/mgf.tex/eq:uz},
 \begin{align}
-    y\brak{n} &= 1 - \frac{1}{n+2}
+    y\brak{n} &= u\brak{n+1} - \frac{1}{n+2}u\brak{n} , \; n \geq 0
+\end{align}
+Since $y(n)$ is only defined for $n \geq 0$, the above expression can be equivalently written as
+\begin{align}
+	y\brak{n} &= \brak{1-\frac{1}{n+2}} u\brak{n}
 \end{align}
 \newpage
 \begin{figure}[h]

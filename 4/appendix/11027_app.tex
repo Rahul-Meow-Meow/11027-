@@ -1,0 +1,38 @@
+\input{tables/table_1.2}
+\end{table}
+\begin{align}
+        log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
+\end{align}
+Let $x\brak{n}$ and $w\brak{n}$ be some expression as described in the table in discrete time domain, whose $Z$ transform, $X\brak{z}$ and $W\brak{z}$ respectively, shall be obtained for future reference.\\
+For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}$
+\begin{align}
+    X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
+    &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
+    &= z^c\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-\brak{n+c}}
+\end{align}
+Using, \eqref{log_expansion}
+\begin{align}
+    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\text{ for $c \geq 2$, $c \in \mathbb{N}$} \label{11027_eq1}
+\end{align} 
+For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
+\begin{align}
+	W\brak{z} &=\sum_{n= -\infty}^{n= +\infty} w\brak{n}z^{-n}\\
+	&= \sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-n}\\
+	&= z\sum_{n = 0}^{n = +\infty} \frac{1}{n+1}z^{-\brak{n+1}} 
+\end{align}
+Using \eqref{log_expansion},
+\begin{align}
+	W\brak{z}&= -zlog\brak{1-z^{-1}} \label{When_c_equals_1}	
+\end{align}
+\\
+Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whose inverse $Z$ transform, $d\brak{n}$ shall be obtained for future reference.\\
+For $D\brak{z}= z^{2}log\brak{1-z^{-1}}$
+\begin{align}
+    d\brak{n}&= \frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
+    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots \notag\\ \;\: &+ \frac{z^{-(n+1)}}{n+1} +  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz
+\end{align}
+Making the substitution $z=e^{jt} \implies dz = je^{jt}dt$
+\begin{align}  
+    d\brak{n}&=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} \notag \\&+ \frac{e^{-3jt}}{3} +.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dt\\
+    &=\frac{-1}{n+2} u\brak{n}\label{11027_eq2}
+\end{align}
