@@ -56,10 +56,9 @@
 \input{tables/table_1.2}
 \end{table}
 \begin{align}
-	u\brak{n} &\system{Z} \frac{1}{1-z^{-1}} , \quad \abs{z} > 1\\
-	u\brak{n+k} &\system{Z} \frac{z^k}{1-z^{-1}}, \forall k\in \mathbb{R}, \quad \abs{z} > 1  \label{Z_trans_pair}\\
+	%\label{Z_trans_pair}\\
 	\delta\brak{n} &\system{Z} 1 \\
-	\delta\brak{n+k} &\system{Z}z^{-k} ,\forall k\in \mathbb{R} \label{11027_eq2}
+	\delta\brak{n+k} &\system{Z}z^{-k} ,\forall k\in \mathbb{R} \label{delta_func}
 \end{align}
 \begin{align}
         \log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
@@ -93,7 +92,7 @@ Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whos
 	\notag \text{For } D\brak{z}&= z^{k}\log\brak{1-z^{-1}} \forall k \geq 1, k\in \mathbb{Z}\\
 	D\brak{z}&= \brak{-z^{k-1} - \frac{1}{2}z^{k-2} - \frac{1}{3}z^{k-3} - \frac{1}{4}z^{k-4} - \ldots}
 \end{align}
-Using \eqref{11027_eq2},
+Using \eqref{delta_func},
 \begin{align}
 	d\brak{n} &= \biggl(-\delta\brak{n+k-1}  -\frac{1}{2}\delta\brak{n+k-2}  -\frac{1}{3}\delta\brak{n+k-3} \notag \\ &-\frac{1}{4}\delta\brak{n+k-4} - \ldots - \frac{1}{n+k}\delta\brak{0}-\ldots\biggr)\\
 	&= \frac{-1}{n+k} u\brak{n} \label{11027_eq_log}
@@ -119,6 +118,10 @@ Using \eqref{when_c_not_1} and \eqref{when_c_equals_1}, we get,
 &= z\brak{z-1}\log\brak{1-z^{-1}} + z\\
     Y\brak{z} &= X\brak{z}U\brak{z}\\
      &=z^2\log\brak{1-z^{-1}} + \frac{z}{1-z^{-1}}
+\end{align}
+\begin{align}
+	u\brak{n} &\system{Z} \frac{1}{1-z^{-1}} , \quad \abs{z} > 1\\
+	u\brak{n+k} &\system{Z} \frac{z^k}{1-z^{-1}}, \forall k\in \mathbb{R}, \quad \abs{z} > 1 \label{Z_trans_pair}
 \end{align}
 Using \eqref{Z_trans_pair} and \eqref{11027_eq_log} ,
 \begin{align}
