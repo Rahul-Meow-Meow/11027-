@@ -1,10 +1,17 @@
+\begin{table}[ht]
 \input{tables/table_1.2}
 \end{table}
 \begin{align}
-        log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
+	u\brak{n} &\system{Z} \frac{1}{1-z^{-1}} , \quad \abs{z} > 1\\
+	u\brak{n+k} &\system{Z} \frac{z^k}{1-z^{-1}}, \forall k\in \mathbb{R}, \quad \abs{z} > 1  \label{Z_trans_pair}\\
+	\delta\brak{n} &\system{Z} 1 \\
+	\delta\brak{n+k} &\system{Z}z^{-k} ,\forall k\in \mathbb{R} \label{11027_eq2}
+\end{align}
+\begin{align}
+        \log\brak{1-x} = -x - \frac{x^2}{2} - \frac{x^3}{3}-\frac{x^4}{4}- \ldots \label{log_expansion}
 \end{align}
 Let $x\brak{n}$ and $w\brak{n}$ be some expression as described in the table in discrete time domain, whose $Z$ transform, $X\brak{z}$ and $W\brak{z}$ respectively, shall be obtained for future reference.\\
-For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mathbb{N}$
+For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\forall c \geq 2,c \in \mathbb{N}$
 \begin{align}
     X\brak{z} &= \sum_{n= -\infty}^{n= +\infty} x\brak{n}z^{-n}\\
     &=\sum_{n = 0}^{n = +\infty} \frac{1}{n+c}z^{-n}\\
@@ -12,7 +19,7 @@ For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\text{where} \: c \geq 2,\: c \in \mat
 \end{align}
 Using, \eqref{log_expansion}
 \begin{align}
-    X\brak{z}&= z^c \biggl(-log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\text{ for $c \geq 2$, $c \in \mathbb{N}$} \label{11027_eq1}
+    X\brak{z}&= z^c \biggl(-\log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\ \forall c \geq 2, c \in \mathbb{N} \label{11027_eq1}
 \end{align} 
 For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \begin{align}
@@ -22,17 +29,13 @@ For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \end{align}
 Using \eqref{log_expansion},
 \begin{align}
-	W\brak{z}&= -zlog\brak{1-z^{-1}} \label{When_c_equals_1}	
+	W\brak{z}&= -z\log\brak{1-z^{-1}} \label{When_c_equals_1}	
 \end{align}
 \\
 Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whose inverse $Z$ transform, $d\brak{n}$ shall be obtained for future reference.\\
-For $D\brak{z}= z^{2}log\brak{1-z^{-1}}$
+For $D\brak{z}= z^{k}\log\brak{1-z^{-1}} \forall k \geq 1, k\in \mathbb{Z}$
 \begin{align}
-    d\brak{n}&= \frac{1}{2\pi j} \oint _C z^{n+1}\log{\brak{1-z^{-1}}}dz\\
-    &=\frac{-1}{2\pi j} \oint _C z^{n+1}\biggl(z^{-1}+\frac{z^{-2}}{2} + \frac{z^{-3}}{3}+\ldots \notag\\ \;\: &+ \frac{z^{-(n+1)}}{n+1} +  \frac{z^{-\brak{n+2}}}{n+2}+ \ldots \biggr) dz
-\end{align}
-Making the substitution $z=e^{jt} \implies dz = je^{jt}dt$
-\begin{align}  
-    d\brak{n}&=\frac{-1}{2\pi} \int_{0}^{2\pi} e^{\brak{n+2}jt}\biggl(e^{-jt}+\frac{e^{-2jt}}{2} \notag \\&+ \frac{e^{-3jt}}{3} +.. +\frac{z^{-\brak{n+2}}jt}{n+2}+..\biggr) dt\\
-    &=\frac{-1}{n+2} u\brak{n}\label{11027_eq2}
+	D\brak{z}&= \brak{-z^{k-1} - \frac{1}{2}z^{k-2} - \frac{1}{3}z^{k-3} - \frac{1}{4}z^{k-4} - \ldots}\\
+	d\brak{n} &= \biggl(-\delta\brak{n+k-1}  -\frac{1}{2}\delta\brak{n+k-2}  -\frac{1}{3}\delta\brak{n+k-3} \notag \\ &-\frac{1}{4}\delta\brak{n+k-4} - \ldots - \frac{1}{n+k}\delta\brak{0}-\ldots\biggr)\\
+	&= \frac{-1}{n+k} u\brak{n} \label{11027_eq_log}
 \end{align}
