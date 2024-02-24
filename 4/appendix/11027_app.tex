@@ -35,7 +35,10 @@ Using \eqref{log_expansion},
 Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whose inverse $Z$ transform, $d\brak{n}$ shall be obtained for future reference.\\
 For $D\brak{z}= z^{k}\log\brak{1-z^{-1}} \forall k \geq 1, k\in \mathbb{Z}$
 \begin{align}
-	D\brak{z}&= \brak{-z^{k-1} - \frac{1}{2}z^{k-2} - \frac{1}{3}z^{k-3} - \frac{1}{4}z^{k-4} - \ldots}\\
+	D\brak{z}&= \brak{-z^{k-1} - \frac{1}{2}z^{k-2} - \frac{1}{3}z^{k-3} - \frac{1}{4}z^{k-4} - \ldots}
+\end{align}
+Using \eqref{11027_eq2},
+\begin{align}
 	d\brak{n} &= \biggl(-\delta\brak{n+k-1}  -\frac{1}{2}\delta\brak{n+k-2}  -\frac{1}{3}\delta\brak{n+k-3} \notag \\ &-\frac{1}{4}\delta\brak{n+k-4} - \ldots - \frac{1}{n+k}\delta\brak{0}-\ldots\biggr)\\
 	&= \frac{-1}{n+k} u\brak{n} \label{11027_eq_log}
 \end{align}
