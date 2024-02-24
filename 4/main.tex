@@ -73,7 +73,7 @@ For  $x\brak{n} = \frac{1}{n+c} u\brak{n},\forall c \geq 2,c \in \mathbb{N}$
 \end{align}
 Using, \eqref{log_expansion}
 \begin{align}
-    X\brak{z}&= z^c \biggl(-\log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\ \forall c \geq 2, c \in \mathbb{N} \label{11027_eq1}
+    X\brak{z}&= z^c \biggl(-\log\brak{1-z^{-1}}- z^{-1}\notag\\& -\frac{z^{-2}}{2}-\frac{z^{-3}}{3} - \ldots -\frac{z^{-(c-1)}}{c-1} \biggr)\ \forall c \geq 2, c \in \mathbb{N} \label{when_c_not_1}
 \end{align} 
 For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \begin{align}
@@ -83,7 +83,7 @@ For $w\brak{n} = \frac{1}{n+1}u\brak{n},$\\
 \end{align}
 Using \eqref{log_expansion},
 \begin{align}
-	W\brak{z}&= -z\log\brak{1-z^{-1}} \label{When_c_equals_1}	
+	W\brak{z}&= -z\log\brak{1-z^{-1}} \label{when_c_equals_1}	
 \end{align}
 \\
 Let $D\brak{z}$ be some expression as described in the table in $Z$ domain, whose inverse $Z$ transform, $d\brak{n}$ shall be obtained for future reference.\\
@@ -112,7 +112,7 @@ $\frac{1}{1 \times 2} + \frac{1}{2 \times 3} + \frac{1}{3 \times 4} + \ldots$
 x\brak{n} &= \frac{1}{\brak{n+1}\brak{n+2}}u\brak{n}\\
 & = \brak{\frac{1}{n+1} - \frac{1}{n+2}}u\brak{n}
 \end{align}
-Using \eqref{11027_eq1} and \eqref{When_c_equals_1}, we get,
+Using \eqref{when_c_not_1} and \eqref{when_c_equals_1}, we get,
 \begin{align}X\brak{z} &= -z log\brak{1-z^{-1}} + z^2 \log\brak{1-z^{-1}} + z\\
 &= z\brak{z-1}\log\brak{1-z^{-1}} + z\\
     Y\brak{z} &= X\brak{z}U\brak{z}\\
