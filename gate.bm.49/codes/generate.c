@@ -42,13 +42,13 @@ void main(){
 	FILE *fptr;
 	fptr = fopen("Values.txt","w");
 	//int *ptr = (int*)malloc(int(s))
-	float t = -3;
-	for(int i = 0; i <=100 ; i++){
+	float t = -1.1;
+	for(int i = 0; i <=40 ; i++){
 		t = t+ (1/10.0);
 		//printf("%f ,", t);
 		float value1 = trap_integration(t-1,t,100000);
 		float value2 = t*u(t,0) + (t-2)*u(t,2) -2*(t-1)*u(t,1);
-		fprintf(fptr, "%.3f %.6f %.6f\n", t, value1, value2);
+		fprintf(fptr, "%f %f %f\n", t, value1, value2);
 	}
 	fclose(fptr);
 }
