@@ -62,10 +62,10 @@ x\brak{t}=
 \end{align}
 If $y\brak{t}$ represents $x\brak{t}$ convolved with itself, which of the following options is/are TRUE?
 \begin{enumerate}[label = (\Alph*)]
-    \item $y\brak{t}$ = 0 for all $t<0$\\
-    \item $y\brak{t}$ = 0 for all $t>1$\\
-    \item $y\brak{t}$ = 0 for all $t>3$\\
-    \item $\int_{0.1}^{0.75} \frac{dy\brak{t}}{dt}\: \text{dt} \neq 0$
+    \item $y\brak{t}$ = 0 for all $t<0$ \label{gate.bm.49.a}\\
+    \item $y\brak{t}$ = 0 for all $t>1$ \label{gate.bm.49.b}\\
+    \item $y\brak{t}$ = 0 for all $t>3$ \label{gate.bm.49.c}\\
+    \item $\int_{0.1}^{0.75} \frac{dy\brak{t}}{dt}\: \text{dt} \neq 0$ \label{gate.bm.49.d}
 \end{enumerate} \hfill{GATE 2023 BM- Q 49}\\
 \bigskip 
 \bigskip
@@ -90,24 +90,29 @@ tu\brak{t} \system{L} \frac{1}{s^2} \label{11027_lap_1}
 \end{align}\\
 Using \eqref{11027_lap_1} and \eqref{11027_lap_2}, 
 \begin{align}
-    y\brak{t} = tu\brak{t} + \brak{t-2}u\brak{t-2} -2\brak{t-1}u\brak{t-1} \label{11027_final_eqn}
+y\brak{t}=
+    \begin{cases}
+        1-|1-t|, & \text{if } 0\leq t \leq 2\\
+        0, & \text{otherwise}
+    \end{cases} \label{11027_final_eqn}
 \end{align}
+
 \begin{figure}[h]
     %\caption{Stem Plot of $x(n)$ v/s n}
-    \includegraphics[width=0.3218\textwidth]{figs/y(t)_vs_t.png}
+    \includegraphics[width=0.4\textwidth]{figs/y(t)_vs_t.png}
     \caption{Stem Plot of $y(t)$ v/s t}\label{11027_y(t)_plot}
 \end{figure}
 \begin{figure}[h]
     %\caption{Stem Plot of $x(n)$ v/s n}
-    \includegraphics[width=0.3\textwidth]{figs/dy_dt_vs_t.png}
+    \includegraphics[width=0.4\textwidth]{figs/dy_dt_vs_t.png}
     \caption{Stem Plot of $dy(t)/dt$ v/s t}\label{11027_dy_dt_plot}
 \end{figure}
 Checking \eqref{11027_final_eqn} with every option,\\
 \begin{enumerate}[label = (\Alph*)]
-	\item From Fig: \ref{11027_y(t)_plot} , $y(t) = 0, \forall t<0$, hence it is true\\
-	\item From Fig: \ref{11027_y(t)_plot} ,$y(t) \neq 0,\forall t \in [1,2]$, hence it is false\\
-	\item From Fig: \ref{11027_y(t)_plot}, $y(t) =0, \forall t>3$, hence it is true\\
-	\item From Fig: \ref{11027_dy_dt_plot}, area under graph is non-zero, hence it is true\\
+	\item From Fig: \ref{11027_y(t)_plot} , $y(t) = 0, \forall t<0$, hence \ref{gate.bm.49.a} is true \\
+	\item From Fig: \ref{11027_y(t)_plot} ,$y(t) \neq 0,\forall t \in [1,2]$, hence \ref{gate.bm.49.b} is false \\
+	\item From Fig: \ref{11027_y(t)_plot} , $y(t) =0, \forall t>3$, hence \ref{gate.bm.49.c} is true \\
+	\item From Fig: \ref{11027_dy_dt_plot} , area under graph is non-zero, hence \ref{gate.bm.49.d} is true \\
 \end{enumerate}
 \end{document}
 
