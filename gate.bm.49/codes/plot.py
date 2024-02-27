@@ -10,7 +10,7 @@ yd_values = data2[:,1]
 
 y_calcu = data[:,2]
 def plotting(x_values,y_values,name, ylabel, y_calcu = []):
-	plt.stem(x_values, y_values, label='y(t) v/s t')
+	plt.plot(x_values, y_values, label='y(t) v/s t')
 	if len(y_calcu) == len(x_values):
 		plt.scatter(x_values, y_calcu, marker = 'X',s=100, color = 'red', label = r'Simulation')
 	plt.xlabel('t')
