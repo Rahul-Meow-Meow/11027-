@@ -1,19 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 data = np.loadtxt('Values.txt')
+data2 = np.loadtxt('Differentiation.txt')
 x_values = data[:,0]
+xd_values = data2[:,0]
 
 y_values = data[:,1]
+yd_values = data2[:,1]
 
 y_calcu = data[:,2]
-plt.stem(x_values, y_values, label='y(t) v/s t')
-plt.scatter(x_values, y_calcu, marker = 'X',s=100, color = 'red', label = r'Simulation')
-plt.xlabel('t')
-plt.ylabel('y(t)')
+def plotting(x_values,y_values,name, ylabel, y_calcu = []):
+	plt.stem(x_values, y_values, label='y(t) v/s t')
+	if len(y_calcu) == len(x_values):
+		plt.scatter(x_values, y_calcu, marker = 'X',s=100, color = 'red', label = r'Simulation')
+	plt.xlabel('t')
+	plt.ylabel(ylabel)
+	plt.grid(True)
+	plt.savefig(name)
 
-#plt.axhline(0, color='black',linewidth=0.5)
-#plt.axvline(0, color='black',linewidth=0.5)
-
-plt.grid(True)
-plt.savefig('y(t)_vs_t.png')
-
+plotting(x_values, y_values,'y(t)_vs_t.png', 'y(t)', y_calcu)
+plt.clf()
+plotting(xd_values, yd_values,'dy_dt_vs_t.png','dy(t)/dt',[])

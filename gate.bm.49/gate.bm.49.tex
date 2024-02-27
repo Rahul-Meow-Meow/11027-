@@ -61,7 +61,7 @@ x\brak{t}=
     \end{cases} 
 \end{align}
 If $y\brak{t}$ represents $x\brak{t}$ convolved with itself, which of the following options is/are TRUE?
-\begin{enumerate}[label = \Alph*]
+\begin{enumerate}[label = (\Alph*)]
     \item $y\brak{t}$ = 0 for all $t<0$\\
     \item $y\brak{t}$ = 0 for all $t>1$\\
     \item $y\brak{t}$ = 0 for all $t>3$\\
@@ -92,41 +92,23 @@ Using \eqref{11027_lap_1} and \eqref{11027_lap_2},
 \begin{align}
     y\brak{t} = tu\brak{t} + \brak{t-2}u\brak{t-2} -2\brak{t-1}u\brak{t-1} \label{11027_final_eqn}
 \end{align}
-
-Checking \eqref{11027_final_eqn} with every option,\\
-For option $\brak{A}$ ,
-\begin{align}
-	t<0 \implies y(t) = 0
-\end{align}
-
-For option $\brak{B}$ , 
-\begin{align}
-	&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;1<t<2\\ 
-	&\implies u\brak{t}=u\brak{t-1} = 1, u\brak{t-2}=0\\
-	&\implies y\brak{t} = 2-t
-\end{align}
-
-For option $\brak{C}$ ,
-\begin{align}
-	&\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;\;t>3
-	\\ &\implies u\brak{t}=u\brak{t-1} = u\brak{t-2} = 0\\
-	&\implies y\brak{t} = 0
-\end{align}
-
-For option $\brak{D}$ ,
-\begin{align}
-    \int_{0.1} ^ {0.75} \frac{dy\brak{t}}{dt} dt &= 
-    \int_{0.1} ^ {0.75} dy\brak{t} \\&= y\brak{0.75} - y\brak{0.1} \\
-    &= 0.75 - 0.1\\
-    &= -0.25
-\end{align}
-\\
-Thus, options $\brak{A}$,$\brak{C}$ and $\brak{D}$ are true.\\
 \begin{figure}[h]
     %\caption{Stem Plot of $x(n)$ v/s n}
-    \includegraphics[width=0.199\textwidth]{figs/y(t)_vs_t.png}
-    \caption{Stem Plot of $y(t)$ v/s t}
+    \includegraphics[width=0.3218\textwidth]{figs/y(t)_vs_t.png}
+    \caption{Stem Plot of $y(t)$ v/s t}\label{11027_y(t)_plot}
 \end{figure}
+\begin{figure}[h]
+    %\caption{Stem Plot of $x(n)$ v/s n}
+    \includegraphics[width=0.3\textwidth]{figs/dy_dt_vs_t.png}
+    \caption{Stem Plot of $dy(t)/dt$ v/s t}\label{11027_dy_dt_plot}
+\end{figure}
+Checking \eqref{11027_final_eqn} with every option,\\
+\begin{enumerate}[label = (\Alph*)]
+	\item From Fig: \ref{11027_y(t)_plot} , $y(t) = 0, \forall t<0$, hence it is true\\
+	\item From Fig: \ref{11027_y(t)_plot} ,$y(t) \neq 0,\forall t \in [1,2]$, hence it is false\\
+	\item From Fig: \ref{11027_y(t)_plot}, $y(t) =0, \forall t>3$, hence it is true\\
+	\item From Fig: \ref{11027_dy_dt_plot}, area under graph is non-zero, hence it is true\\
+\end{enumerate}
 \end{document}
 
 
