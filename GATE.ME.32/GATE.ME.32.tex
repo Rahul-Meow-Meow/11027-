@@ -94,9 +94,9 @@ Using \eqref{11027_Moment_Of_Inertia} and \eqref{11027_dAlambert_principle}, we 
 \\
 Taking Laplace Transform on both sides,we get
 \begin{align}
-	s^2\alpha \brak{s} &- s \theta \brak{0} - \theta ' \brak{0} + \frac{2\sqrt{2}g}{5R} \alpha\brak{s}= 0\\
-	\alpha\brak{s}&\brak{s^2+\frac{2\sqrt{2}g}{5R}} = \theta ' \brak{0}\\
-	\alpha\brak{s}&= \frac{\theta ' \brak{0}}{\brak{s^2 + \frac{2\sqrt{2}g}{5R}}} \label{11027_alpha_s}
+	s^2\Theta \brak{s} &- s \theta \brak{0} - \theta ' \brak{0} + \frac{2\sqrt{2}g}{5R} \alpha\brak{s}= 0\\
+	\Theta\brak{s}&\brak{s^2+\frac{2\sqrt{2}g}{5R}} = \theta ' \brak{0}\\
+	\Theta\brak{s}&= \frac{\theta ' \brak{0}}{\brak{s^2 + \frac{2\sqrt{2}g}{5R}}} \label{11027_alpha_s}
 \end{align}
 \\
 \begin{align}
@@ -105,9 +105,9 @@ Taking Laplace Transform on both sides,we get
 	\frac{\brak{e^{jat} - e^{-jat}}}{2}u\brak{t}&\system \frac{a}{s^2+a^2}\\
 	\sin\brak{at}&\system\frac{a}{s^2+a^2} \label{11027_Laplace_of_sine}
 \end{align}
-From \eqref{11027_alpha_s} and \eqref{11027_Laplace_of_sine}
+From \eqref{11027_alpha_s}
 \begin{align}
-	\alpha\brak{s}&= \frac{\theta ' \brak{0} \brak{\sqrt{\frac{2\sqrt{2}g}{5R} }} }{\brak{s^2 + \frac{2\sqrt{2}g}{5R}}} \frac{1}{ \brak{\sqrt{\frac{2\sqrt{2}g}{5R} }} }
+	\Theta\brak{s}&= \frac{\theta ' \brak{0} \brak{\sqrt{\frac{2\sqrt{2}g}{5R} }} }{\brak{s^2 + \frac{2\sqrt{2}g}{5R}}} \frac{1}{ \brak{\sqrt{\frac{2\sqrt{2}g}{5R} }} }
 \end{align}
 \\
 Taking inverse Laplace by putting $\frac{\theta ' \brak{0}}{\brak{\sqrt{\frac{2\sqrt{2}g}{5R}}}} = k$ and \eqref{11027_Laplace_of_sine}, 
@@ -121,4 +121,9 @@ Thus,
 	\beta = \sqrt{\brak{5\sqrt{2}}}\\
 	\beta = 2.66
 \end{align}
+\begin{figure}[h]
+    %\caption{Stem Plot of $x(n)$ v/s n}
+    \includegraphics[width=0.4\textwidth]{figs/theta_t_plot.png}\label{11027_GATE_ME_32_thetaplot}
+    \caption{Plot of $\theta\brak{t}$}
+\end{figure}
 \end{document}
