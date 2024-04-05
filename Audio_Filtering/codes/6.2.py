@@ -4,7 +4,7 @@ from scipy import signal
 import numpy as np
 
 #read .wav file 
-input_signal, fs = sf.read('Dhanush-Singing.wav') 
+input_signal, fs = sf.read('Rahul-Singing.wav') 
 
 #sampling frequency of Input signal
 sampl_freq = fs
