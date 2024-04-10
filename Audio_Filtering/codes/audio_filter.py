@@ -2,7 +2,7 @@ import soundfile as sf
 import numpy as np
 from scipy import signal
 #read .wav file 
-input_signal,fs = sf.read('Rahul-Singing.wav') 
+input_signal,fs = sf.read('audio.wav') 
 
 #sampling frequency of Input signal
 sampl_freq=fs
@@ -28,4 +28,4 @@ output_signal = signal.filtfilt(b, a, input_signal,padlen=1)
 #output_signal = signal.lfilter(b, a, input_signal)
 
 #write the output signal into .wav file
-sf.write('Sound_With_ReducedNoise.wav', output_signal, fs) 
+sf.write('sound.wav', output_signal, fs) 

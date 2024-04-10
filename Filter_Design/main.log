@@ -1,0 +1,354 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.4.5)  7 APR 2024 10:28
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**main.tex
+(./main.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2022-01-21>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2021/10/04 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count193
+\l__pdf_internal_box=\box50
+)
+No file main.aux.
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count194
+\scratchdimen=\dimen141
+\scratchbox=\box51
+\nofMPsegments=\count195
+\nofMParguments=\count196
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count197
+\MPscratchDim=\dimen142
+\MPnumerator=\count198
+\makeMPintoPDFobject=\count199
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 15.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 22.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 22.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 3
+1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 31.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+
+LaTeX Warning: Reference `lpfirst' on page 2 undefined on input line 73.
+
+[2]
+
+LaTeX Warning: Reference `lpfirst' on page 3 undefined on input line 98.
+
+
+LaTeX Warning: Reference `lppoles' on page 3 undefined on input line 110.
+
+
+LaTeX Warning: Reference `poleleft' on page 3 undefined on input line 110.
+
+
+LaTeX Warning: Reference `lpsqfinal' on page 3 undefined on input line 115.
+
+
+LaTeX Warning: Reference `lpfinal' on page 3 undefined on input line 115.
+
+
+LaTeX Warning: Reference `lpfinal' on page 3 undefined on input line 116.
+
+Package epstopdf Info: Source file: <fig1.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 18294 bytes
+(epstopdf)             Output file: <fig1-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig1-eps-converted-to.pdf 
+fig1.eps>
+(epstopdf)             \includegraphics on input line 135.
+runsystem(repstopdf --outfile=fig1-eps-converted-to.pdf fig1.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig1-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:32
+(epstopdf)                    size: 12477 bytes.
+<fig1-eps-converted-to.pdf, id=23, 495.8525pt x 391.4625pt>
+File: fig1-eps-converted-to.pdf Graphic file (type pdf)
+<use fig1-eps-converted-to.pdf>
+Package pdftex.def Info: fig1-eps-converted-to.pdf  used on input line 135.
+(pdftex.def)             Requested size: 426.79134pt x 336.94386pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 135--136
+[][] 
+ []
+
+Package epstopdf Info: Source file: <fig2.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 15801 bytes
+(epstopdf)             Output file: <fig2-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig2-eps-converted-to.pdf 
+fig2.eps>
+(epstopdf)             \includegraphics on input line 142.
+runsystem(repstopdf --outfile=fig2-eps-converted-to.pdf fig2.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig2-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:32
+(epstopdf)                    size: 19798 bytes.
+<fig2-eps-converted-to.pdf, id=24, 498.86375pt x 391.4625pt>
+File: fig2-eps-converted-to.pdf Graphic file (type pdf)
+<use fig2-eps-converted-to.pdf>
+Package pdftex.def Info: fig2-eps-converted-to.pdf  used on input line 142.
+(pdftex.def)             Requested size: 426.79134pt x 334.91895pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 142--143
+[][] 
+ []
+
+
+LaTeX Warning: Reference `lpsqfinal' on page 3 undefined on input line 143.
+
+
+LaTeX Warning: Reference `lpfinal' on page 3 undefined on input line 143.
+
+
+LaTeX Warning: Reference `lpsqfinal' on page 3 undefined on input line 143.
+
+
+LaTeX Warning: Reference `lpfinal' on page 3 undefined on input line 143.
+
+Package epstopdf Info: Source file: <fig3.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 10358 bytes
+(epstopdf)             Output file: <fig3-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig3-eps-converted-to.pdf 
+fig3.eps>
+(epstopdf)             \includegraphics on input line 148.
+runsystem(repstopdf --outfile=fig3-eps-converted-to.pdf fig3.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig3-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:33
+(epstopdf)                    size: 7009 bytes.
+<fig3-eps-converted-to.pdf, id=25, 499.8675pt x 391.4625pt>
+File: fig3-eps-converted-to.pdf Graphic file (type pdf)
+<use fig3-eps-converted-to.pdf>
+Package pdftex.def Info: fig3-eps-converted-to.pdf  used on input line 148.
+(pdftex.def)             Requested size: 426.79134pt x 334.24396pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 148--149
+[][] 
+ []
+
+
+LaTeX Warning: Reference `bpfinal' on page 3 undefined on input line 149.
+
+[3] [4 <./fig1-eps-converted-to.pdf>] [5 <./fig2-eps-converted-to.pdf>]
+[6 <./fig3-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `bpfinal' on page 7 undefined on input line 158.
+
+
+LaTeX Warning: Reference `analdig' on page 7 undefined on input line 158.
+
+Package epstopdf Info: Source file: <fig4.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 13594 bytes
+(epstopdf)             Output file: <fig4-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig4-eps-converted-to.pdf 
+fig4.eps>
+(epstopdf)             \includegraphics on input line 178.
+runsystem(repstopdf --outfile=fig4-eps-converted-to.pdf fig4.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig4-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:33
+(epstopdf)                    size: 9539 bytes.
+<fig4-eps-converted-to.pdf, id=64, 499.8675pt x 392.46625pt>
+File: fig4-eps-converted-to.pdf Graphic file (type pdf)
+<use fig4-eps-converted-to.pdf>
+Package pdftex.def Info: fig4-eps-converted-to.pdf  used on input line 178.
+(pdftex.def)             Requested size: 426.79134pt x 335.101pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 178--179
+[][] 
+ []
+
+[7] [8 <./fig4-eps-converted-to.pdf>]
+
+LaTeX Warning: Reference `kaisercond' on page 9 undefined on input line 230.
+
+
+LaTeX Warning: Reference `kaiser' on page 9 undefined on input line 232.
+
+
+LaTeX Warning: Reference `firlpdef' on page 9 undefined on input line 241.
+
+
+LaTeX Warning: Reference `rect' on page 9 undefined on input line 241.
+
+
+LaTeX Warning: Reference `firlpfinal' on page 9 undefined on input line 247.
+
+Package epstopdf Info: Source file: <fig5.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 11198 bytes
+(epstopdf)             Output file: <fig5-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig5-eps-converted-to.pdf 
+fig5.eps>
+(epstopdf)             \includegraphics on input line 251.
+runsystem(repstopdf --outfile=fig5-eps-converted-to.pdf fig5.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig5-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:33
+(epstopdf)                    size: 7443 bytes.
+<fig5-eps-converted-to.pdf, id=81, 499.8675pt x 392.46625pt>
+File: fig5-eps-converted-to.pdf Graphic file (type pdf)
+<use fig5-eps-converted-to.pdf>
+Package pdftex.def Info: fig5-eps-converted-to.pdf  used on input line 251.
+(pdftex.def)             Requested size: 426.79134pt x 335.101pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 251--252
+[][] 
+ []
+
+
+LaTeX Warning: Reference `firlpfinal' on page 9 undefined on input line 262.
+
+[9] [10 <./fig5-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <fig6.eps>
+(epstopdf)                    date: 2024-04-07 10:17:15
+(epstopdf)                    size: 11304 bytes
+(epstopdf)             Output file: <fig6-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=fig6-eps-converted-to.pdf 
+fig6.eps>
+(epstopdf)             \includegraphics on input line 272.
+runsystem(repstopdf --outfile=fig6-eps-converted-to.pdf fig6.eps)...executed sa
+fely (allowed).
+
+Package epstopdf Info: Result file: <fig6-eps-converted-to.pdf>
+(epstopdf)                    date: 2024-04-07 10:28:33
+(epstopdf)                    size: 7557 bytes.
+<fig6-eps-converted-to.pdf, id=97, 499.8675pt x 392.46625pt>
+File: fig6-eps-converted-to.pdf Graphic file (type pdf)
+<use fig6-eps-converted-to.pdf>
+Package pdftex.def Info: fig6-eps-converted-to.pdf  used on input line 272.
+(pdftex.def)             Requested size: 426.79134pt x 335.101pt.
+
+Overfull \hbox (81.79134pt too wide) in paragraph at lines 272--273
+[][] 
+ []
+
+[11 <./fig6-eps-converted-to.pdf>] (./main.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1361 strings out of 478287
+ 22264 string characters out of 5849290
+ 322719 words of memory out of 5000000
+ 19586 multiletter control sequences out of 15000+600000
+ 473860 words of font info for 43 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 55i,12n,62p,524b,222s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on main.pdf (11 pages, 242820 bytes).
+PDF statistics:
+ 174 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+
